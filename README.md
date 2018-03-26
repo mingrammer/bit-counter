@@ -28,8 +28,6 @@ Increment the bit count by 1. It inverts 1 to 0 until it encounters 0, and inver
 ### How it works
 
 ```
-# Increase 7 (000111) to 8 (001000)
-
 000111
      ^ (1 to 0)
 000110
@@ -70,8 +68,6 @@ Decrement the bit count by 1. It inverts 0 to 1 until it encounters 1, and inver
 ### How it works
 
 ```
-# Decrease 8 (001000) to 7 (000111)
-
 001000
      ^ (0 to 1)
 001001
