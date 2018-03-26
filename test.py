@@ -18,5 +18,6 @@ class TestIncrement(unittest.TestCase):
             self.assertEqual(i, idec)
             decrement(bits)
 
+
 if __name__ == '__main__':
     unittest.main()
