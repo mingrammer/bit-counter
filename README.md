@@ -16,9 +16,20 @@ python3 test.py
 
 Increment the bit count by 1. It inverts 1 to 0 until it encounters 0, and inverts 0 to 1 when it encounters 0.
 
-### Increase 7 (000111) to 8 (001000)
+```
+00000000
+00000001
+00000010
+00000011
+00000100
+........
+```
+
+### How it works
 
 ```
+# Increase 7 (000111) to 8 (001000)
+
 000111
      ^ (1 to 0)
 000110
@@ -28,6 +39,8 @@ Increment the bit count by 1. It inverts 1 to 0 until it encounters 0, and inver
 001000
   ^ (0 to 1)
 ```
+
+### Implementation
 
 ```python
 def increment(bits):
@@ -45,9 +58,20 @@ def increment(bits):
 
 Decrement the bit count by 1. It inverts 0 to 1 until it encounters 1, and inverts 1 to 0 when it encounters 1.
 
-### Decrease 8 (001000) to 7 (000111)
+```
+11111111
+11111110
+11111101
+11111100
+11111011
+........
+```
+
+### How it works
 
 ```
+# Decrease 8 (001000) to 7 (000111)
+
 001000
      ^ (0 to 1)
 001001
@@ -57,6 +81,8 @@ Decrement the bit count by 1. It inverts 0 to 1 until it encounters 1, and inver
 000111
   ^ (1 to 0)
 ```
+
+### Implementation
 
 ```python
 def decrement(bits):
